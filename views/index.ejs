@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Bitly URL Shortener</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form method="POST" action="/new">
+          <div class="form-group">
+            <label>Enter the long URL to shorten:</label>
+            <input placeholder="Type here the URL" id="url" name="url">
+          </div>
+          <button type="submit" class="btn-primary">Shorten</button>
+        </form>
+      </div>
+    </main>
+
+  </body>
+</html>

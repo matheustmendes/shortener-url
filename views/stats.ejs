@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shortener</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <header>
+
+    <div class="container">
+        <h1>URL Shortener</h1>
+        
+      </div>
+    </header>
+    <main>
+      <div class="stats">
+        <p>
+            <b>
+                <%= process.env.DOMAIN %><%= code %> 
+            </b>
+        </p>
+
+        <p>
+            Redirect to: <br> <%= url %> 
+        </p>
+
+        <div class="statsColumn">
+            <div class="statsBox">
+
+                <b>
+                    <%= hits %>
+                </b>
+                <p>Visited By</p>
+            </div>
+
+            <div class="statsBox">
+                <b>
+                    <%= updatedAt %>
+                </b>
+                <p>
+                    Last Visit
+                </p>
+            </div>
+        </div>
+        <a href="/">
+            <button class="btn">
+                Shorten new URL
+            </button>
+        </a>
+      </div>
+    </main>
+
+  </body>
+</html>

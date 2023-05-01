@@ -1,0 +1,154 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* Header Styles */
+header {
+  background: url('../../public/images/shortener.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 200px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+  }
+}
+
+/* Colors */
+:root {
+  --primary-color: #333;
+  --secondary-color: #00BFFF;
+  --bg-color: #fafafa;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+/* Main Styles */
+main {
+  padding: 40px 0;
+}
+
+form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form label, #short-url label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+input#url{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-color);
+  background-color: #f2f2f2;
+}
+
+button, .btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover, .btn-secondary:hover {
+  background-color: #007bff;
+}
+
+#short-url {
+  margin-top: 40px;
+  display: none;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group input {
+  flex-grow: 1;
+}
+
+.btn-secondary {
+  margin-left: 10px;
+}
+
+
+
+.stats {
+
+  text-align: center;
+}
+
+.statsBox{
+  flex: 0 0 25%;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  text-align: center;
+  margin: .5rem;
+}
+ 
+.statsRow{
+  display: flex;
+  justify-content: center !important;
+}
