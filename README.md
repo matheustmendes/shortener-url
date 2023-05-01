@@ -19,6 +19,12 @@ DOMAIN= seudominio
 
 Para encurtar uma URL, basta inserir a URL no campo de entrada na página inicial e clicar no botão "Encurtar". O aplicativo irá gerar uma URL curta única que você pode usar para acessar a URL original. URLs encurtadas podem ser copiadas e compartilhadas com outras pessoas.
 
+Para acessar as estatisticas de acesso do seu link utilize o seu link encurtado/stats.
+
+Exemplo: http://localhost:3000/BAB9E/stats
+
+
+
 ## Tecnologias Utilizadas
 
 - Node.js
@@ -49,6 +55,10 @@ DOMAIN=yourdomain
 ## Usage
 
 To shorten a URL, simply enter the URL in the input field on the homepage and click the "Shorten" button. The application will generate a unique short URL that you can use to access the original URL. Shortened URLs can be copied and shared with others.
+
+To acess the acess stats of your link use your shortened link / stats
+
+Example: http://localhost:3000/BAB9E/stats
 
 ## Technologies Used
 
