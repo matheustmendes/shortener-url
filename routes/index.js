@@ -22,7 +22,7 @@ router.get('/:code', async (req, res, next) => {
 
   result.hits++
   await result.save()
-  res.redirect('https://' + result.url)
+  res.redirect(result.url)
 })
 
 /* GET home page. */
